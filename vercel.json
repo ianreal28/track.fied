@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "react-task-manager/api/tasks", "destination": "/api/tasks.js" }
+  ]
+}
