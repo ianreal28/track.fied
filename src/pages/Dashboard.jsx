@@ -64,7 +64,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-dvh font-inter antialiased w-dvw bg-slate-100 dark:bg-slate-950 dark:text-white">
+    <div className="min-h-dvh font-inter antialiased bg-slate-100 dark:bg-slate-950 dark:text-white overflow-x-hidden">
       <dashboardContext.Provider
         value={{
           user_email,
