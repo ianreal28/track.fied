@@ -1,13 +1,6 @@
 {
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "react-task-manager/api/tasks",
-      "destination": "/api/tasks.js"
-    },
-    {
-      "source": "/((?!api/).*)",
-      "destination": "/index.html"
-    }
-  ]
+  "framework": "vite",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "cleanUrls": true
 }
