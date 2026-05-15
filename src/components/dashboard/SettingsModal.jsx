@@ -50,7 +50,7 @@ export default function SettingsModal() {
     const { data, error } = await supabase.auth.resetPasswordForEmail(
       user_email,
       {
-        redirectTo: "http://localhost:3000/forgot-password",
+        redirectTo: "https://trackfied.vercel.app/forgot-password",
       },
     );
 

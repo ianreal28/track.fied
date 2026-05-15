@@ -64,7 +64,7 @@ export default function Auth() {
     } else {
       setLoading(true);
       const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: "http://localhost:3000/forgot-password",
+        redirectTo: "https://trackfied.vercel.app/forgot-password",
       });
 
       if (error) {
