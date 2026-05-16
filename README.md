@@ -40,13 +40,12 @@ A full-stack productivity app demonstrating authentication, CRUD operations, and
 - Supabase/Supabase Auth
 
 ---
-
 ## Deployment
 
 This project uses CI/CD via GitHub integration with Vercel.  
 Every push to the main branch automatically triggers a build and deploy to production.
-
 Live deployment is hosted on Vercel.
+
 ---
 ## Live Demo
 
@@ -59,7 +58,6 @@ https://trackfied.vercel.app/
 - Team collabs
 
 ---
-
 ## Author
 
 Ian Wendell E. Real
