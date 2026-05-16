@@ -42,7 +42,7 @@ export default function DeleteModal() {
       <div className="flex flex-col bg-white border rounded w-3/4 md:w-1/3 dark:bg-slate-950">
         <div className="border-b flex text-2xl p-2 justify-end">
           <FaRectangleXmark
-            className="cursor-pointer hover:text-mist-800"
+            className="cursor-pointer hover:text-mist-800 active:text-mist-900"
             onClick={() => setDeleteData(null)}
           />
         </div>
@@ -50,7 +50,7 @@ export default function DeleteModal() {
           Do you want to delete task {deleteData ? deleteData.title : ""} ?
         </h3>
         <button
-          className="flex border rounded-md items-center text-md font-medium justify-center py-2 m-2 cursor-pointer bg-red-600 hover:bg-red-800 text-white z-20"
+          className="flex border rounded-md items-center text-md font-medium justify-center py-2 m-2 cursor-pointer bg-red-600 hover:bg-red-800 active:bg-red-950 text-white z-20"
           onClick={() => handleDelete(deleteData)}
         >
           Confirm

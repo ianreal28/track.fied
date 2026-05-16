@@ -27,7 +27,7 @@ export default function Register({
         />
         <button
           type="submit"
-          className="flex w-full bg-sky-300 hover:bg-sky-400 dark:bg-sky-500 dark:hover:bg-sky-600 font-medium cursor-pointer py-4 mt-8 border rounded-lg justify-center"
+          className="flex w-full bg-sky-300 hover:bg-sky-400 active:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-600 dark:active:bg-sky-700 font-medium cursor-pointer py-4 mt-8 border rounded-lg justify-center"
           disabled={loading}
         >
           {!loading ? "Register" : "Loading..."}
@@ -36,7 +36,7 @@ export default function Register({
       <p className="mt-4 mb-2">
         Already have an account?{" "}
         <span
-          className="text-sky-500 hover:text-sky-700 cursor-pointer"
+          className="text-sky-500 hover:text-sky-700 active:text-sky-800 cursor-pointer"
           onClick={() => {
             setShowLogin(!showLogin);
             setEmail("");

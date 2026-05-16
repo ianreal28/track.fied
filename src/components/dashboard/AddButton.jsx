@@ -6,7 +6,7 @@ export default function AddButton() {
   return (
     <>
       <button
-        className={`flex border border-gray-500 cursor-pointer w-3/4 mt-5 p-4 rounded-3xl items-center justify-center shadow-md bg-white hover:bg-gray-100 dark:shadow-white dark:bg-slate-950 dark:hover:bg-slate-800`}
+        className={`flex border border-gray-500 cursor-pointer w-3/4 mt-5 p-4 rounded-3xl items-center justify-center shadow-md bg-white hover:bg-gray-100 active:bg-gray-400 dark:shadow-white dark:bg-slate-950 dark:hover:bg-slate-800 dark:active:bg-slate-700`}
         onClick={() => setShowAddForm(!showAddForm)}
       >
         <span className="text-2xl pr-4">

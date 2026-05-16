@@ -45,12 +45,13 @@ export default function SettingsModal() {
 
   // Password Reset
   const resetPword = async (e) => {
+    const forgotURL = import.meta.env.VITE_FORGOT_PASSWORD_URL;
     e.preventDefault();
     setLoading(true);
     const { data, error } = await supabase.auth.resetPasswordForEmail(
       user_email,
       {
-        redirectTo: "https://trackfied.vercel.app/forgot-password",
+        redirectTo: `${forgotURL}/forgot-password`,
       },
     );
 
@@ -70,7 +71,7 @@ export default function SettingsModal() {
         <div className="border-b flex text-2xl p-2 items-center">
           <h3 className="flex-1 font-space-grotesk font-bold">Settings</h3>
           <FaRectangleXmark
-            className="cursor-pointer hover:text-mist-800"
+            className="cursor-pointer hover:text-mist-700 active:text-mist-500 dark:hover:text-mist-800 dark:active:text-mist-900"
             onClick={() => setOpenSettings(false)}
           />
         </div>
@@ -93,7 +94,7 @@ export default function SettingsModal() {
             ></input>
             <button
               type="submit"
-              className="flex w-full rounded-sm my-1 p-1 justify-center cursor-pointer bg-sky-300 dark:bg-sky-500 hover:bg-sky-500 dark:hover:bg-sky-700"
+              className="flex w-full rounded-sm my-1 p-1 justify-center cursor-pointer bg-sky-300 dark:bg-sky-500 hover:bg-sky-500 dark:hover:bg-sky-700 active:bg-sky-700 dark:active:bg-sky-900"
               disabled={loading}
             >
               Change email
@@ -102,7 +103,7 @@ export default function SettingsModal() {
           <div className="p-2 border-t">
             <button
               onClick={resetPword}
-              className="flex w-full rounded-sm my-1 p-1 justify-center cursor-pointer bg-sky-300 dark:bg-sky-500 hover:bg-sky-500 dark:hover:bg-sky-700"
+              className="flex w-full rounded-sm my-1 p-1 justify-center cursor-pointer bg-sky-300 dark:bg-sky-500 hover:bg-sky-500 dark:hover:bg-sky-700 active:bg-sky-700 dark:active:bg-sky-900"
               disabled={loading}
             >
               Reset my password

@@ -49,7 +49,7 @@ export default function TaskItem({ task, toggleComplete }) {
         </legend>
         <div className="flex">
           <button
-            className="p-2 mr-2 font-extrabold text-2xl cursor-pointer hover:text-green-600"
+            className="p-2 mr-2 font-extrabold text-2xl cursor-pointer hover:text-green-600 active:text-green-800"
             onClick={() => toggleComplete(task)}
             disabled={loading}
           >
@@ -59,7 +59,7 @@ export default function TaskItem({ task, toggleComplete }) {
             {task.title}
           </h3>
           <button
-            className="p-2 font-extrabold text-2xl cursor-pointer hover:text-mist-800"
+            className="p-2 font-extrabold text-2xl cursor-pointer hover:text-mist-800 active:text-mist-700 dark:active:text-mist-900"
             onClick={() =>
               setShowDetails(showDetails === task.id ? null : task.id)
             }
@@ -81,14 +81,14 @@ export default function TaskItem({ task, toggleComplete }) {
             <div className="flex grow justify-end">
               <button
                 onClick={() => showEdit(task)}
-                className="flex items-center mx-2 px-2 py-1 rounded-sm cursor-pointer text-sm font-medium bg-blue-600 hover:bg-blue-800 text-white"
+                className="flex items-center mx-2 px-2 py-1 rounded-sm cursor-pointer text-sm font-medium bg-blue-600 hover:bg-blue-700 active:bg-blue-900 text-white"
                 disabled={loading}
               >
                 <FaPencil className="mr-1" /> Edit Task
               </button>
               <button
                 onClick={() => setDeleteData(task)}
-                className="flex items-center px-2 py-1 rounded-sm cursor-pointer text-sm font-medium bg-red-600 hover:bg-red-800 text-white"
+                className="flex items-center px-2 py-1 rounded-sm cursor-pointer text-sm font-medium bg-red-600 hover:bg-red-700 active:bg-red-900 text-white"
                 disabled={loading}
               >
                 <FaTrashCan className="mr-1" /> Delete

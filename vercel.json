@@ -1,4 +1,14 @@
 {
-  "framework": "vite",
-  "cleanUrls": true
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "react-task-manager/api/tasks",
+      "destination": "/api/tasks.js"
+    },
+    {
+      "source": "/((?!api|static|assets|favicon|logo|manifest|.*\\..*$).*)",
+      "destination": "/index.html"
+    }
+  ]
 }

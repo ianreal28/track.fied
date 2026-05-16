@@ -83,7 +83,7 @@ export default function Editform() {
             Update Task
           </h1>
           <button
-            className="flex-none text-3xl cursor-pointer hover:text-mist-800"
+            className="flex-none text-3xl cursor-pointer hover:text-mist-800 active:text-mist-700 dark:active:text-mist-900"
             onClick={() => setEditVisible(!editVisible)}
           >
             <FaRectangleXmark />
@@ -116,7 +116,7 @@ export default function Editform() {
           ></input>
           <button
             type="submit"
-            className="cursor-pointer p-2 my-2 font-medium bg-sky-300 hover:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-700 rounded-3xl disabled:bg-sky-100 dark:disabled:bg-sky-300 disabled:text-gray-500 disabled:cursor-not-allowed"
+            className="cursor-pointer p-2 my-2 font-medium bg-sky-300 hover:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-700 active:bg-sky-700 dark:active:bg-sky-900 rounded-3xl disabled:bg-sky-100 dark:disabled:bg-sky-300 disabled:text-gray-500 disabled:cursor-not-allowed"
             disabled={loading || !editTitle || !editDesc || !editDue}
           >
             {loading ? "Updating Task..." : "Update Task"}

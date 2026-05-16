@@ -72,7 +72,7 @@ export default function ForgotPassword() {
             />
             <button
               type="submit"
-              className={`disabled:cursor-not-allowed ${confirmPword && pword !== confirmPword ? "border-red-600 text-red-600" : ""} flex w-full bg-sky-300 hover:bg-sky-400 dark:bg-sky-500 dark:hover:bg-sky-600 font-medium cursor-pointer py-4 mt-8 border rounded-lg justify-center`}
+              className={`disabled:cursor-not-allowed ${confirmPword && pword !== confirmPword ? "border-red-600 text-red-600" : ""} flex w-full bg-sky-300 hover:bg-sky-400 active:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-600 dark:active:bg-sky-700 font-medium cursor-pointer py-4 mt-8 border rounded-lg justify-center`}
               disabled={loading || !pword || pword !== confirmPword}
             >
               {!pword

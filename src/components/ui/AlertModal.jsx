@@ -11,7 +11,7 @@ export default function AlertModal() {
       <div className="flex flex-col bg-white border rounded w-3/4 md:w-1/3 h-1/4 dark:bg-slate-950">
         <div className="border-b flex text-2xl p-2 justify-end">
           <FaRectangleXmark
-            className="cursor-pointer hover:text-mist-800"
+            className="cursor-pointer hover:text-mist-800 active:text-mist-900 active:scale-95"
             onClick={() => setAlertMsg(null)}
           />
         </div>

@@ -59,12 +59,13 @@ export default function Auth() {
   // Forgot Password
   const handleForgot = async (e) => {
     e.preventDefault();
+    const forgotURL = import.meta.env.VITE_FORGOT_PASSWORD_URL;
     if (!email) {
       setAlertMsg("Please enter an email to recover the password");
     } else {
       setLoading(true);
       const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: "https://trackfied.vercel.app/forgot-password",
+        redirectTo: `${forgotURL}/forgot-password`,
       });
 
       if (error) {

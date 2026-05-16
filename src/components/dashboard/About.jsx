@@ -12,7 +12,7 @@ export default function About() {
         <div className="border-b flex text-2xl px-4 py-2 items-center">
           <h3 className="flex-1 font-space-grotesk font-bold">About</h3>
           <FaRectangleXmark
-            className="cursor-pointer hover:text-mist-800"
+            className="cursor-pointer hover:text-mist-700 active:text-mist-500 dark:hover:text-mist-800 dark:active:text-mist-900"
             onClick={() => setShowAbout(false)}
           />
         </div>
@@ -47,10 +47,10 @@ export default function About() {
           </div>
           <div className="flex p-2 justify-center gap-4 text-2xl">
             <a
-              href="https://github.com/ianreal28"
+              href="https://github.com/ianreal28/track.fied"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer hover:text-mist-600 dark:hover:text-mist-800"
+              className="cursor-pointer hover:text-mist-700 active:text-mist-500 dark:hover:text-mist-800 dark:active:text-mist-900"
             >
               <FaGithub />
             </a>
@@ -58,7 +58,7 @@ export default function About() {
               href="https://www.linkedin.com/in/ian-wendell-real-246771187/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer hover:text-mist-600 dark:hover:text-mist-800"
+              className="cursor-pointer hover:text-mist-700 active:text-mist-500 dark:hover:text-mist-800 dark:active:text-mist-900"
             >
               <FaLinkedinIn />
             </a>

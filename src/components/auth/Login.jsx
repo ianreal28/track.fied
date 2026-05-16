@@ -28,7 +28,7 @@ export default function Login({
         />
         <button
           type="submit"
-          className="flex w-full bg-sky-300 hover:bg-sky-400 dark:bg-sky-500 dark:hover:bg-sky-600 font-medium cursor-pointer py-4 mt-8 border rounded-lg justify-center"
+          className="flex w-full bg-sky-300 hover:bg-sky-400 active:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-600 dark:active:bg-sky-700 font-medium cursor-pointer py-4 mt-8 border rounded-lg justify-center"
           disabled={loading}
         >
           {!loading ? "Log-In" : "Loading..."}
@@ -37,7 +37,7 @@ export default function Login({
       <p className="mt-4">
         Don't have an account?{" "}
         <span
-          className="text-sky-500 hover:text-sky-700 cursor-pointer"
+          className="text-sky-500 hover:text-sky-700 active:text-sky-800 cursor-pointer"
           onClick={() => {
             setShowLogin(!showLogin);
             setEmail("");
@@ -48,7 +48,7 @@ export default function Login({
         </span>
       </p>
       <small
-        className="pt-1 mb-2 text-sky-500 hover:text-sky-700 cursor-pointer"
+        className="pt-1 mb-2 text-sky-500 hover:text-sky-700 active:text-sky-800 cursor-pointer"
         onClick={handleForgot}
       >
         Forgot Password?
