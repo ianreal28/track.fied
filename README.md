@@ -1,6 +1,6 @@
-![Website Deploy](https://deploy-badge.vercel.app/?url=https%3A%2F%2Ftrackfied.vercel.app%2F&style=for-the-badge&logo=vercel&name=Vercel)
+[![Website Deploy](https://deploy-badge.vercel.app/?url=https%3A%2F%2Ftrackfied.vercel.app%2F&style=for-the-badge&logo=vercel&name=Vercel)](https://trackfied.vercel.app/)
 
-# track.fied
+# **track.fied**
 
 [![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://react.dev/)
@@ -11,7 +11,7 @@
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 
-A full-stack task management application built with React, Express, and Supabase.
+A full-stack productivity app demonstrating authentication, CRUD operations, and database integration using React, Express, and Supabase.
 
 ---
 
