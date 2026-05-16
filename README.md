@@ -1,4 +1,4 @@
-[![Deploy with Vercel](https://vercel.com)](https://vercel.app)
+[![Deploy with Vercel](https://vercel.com)](https://trackfied.vercel.app/)
 
 # track.fied
 
