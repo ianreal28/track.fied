@@ -2,6 +2,9 @@
 
 # track.fied
 
+![React](https://shields.io)
+![Build Status](https://github.com)
+
 A full-stack task management application built with React, Express, and Supabase.
 
 ---
