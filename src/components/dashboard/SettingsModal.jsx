@@ -61,6 +61,7 @@ export default function SettingsModal() {
     } else {
       setAlertMsg("Check your email for the reset link!");
       setLoading(false);
+      setOpenSettings(false);
     }
   };
   return (
