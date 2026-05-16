@@ -7,7 +7,7 @@
       "destination": "/api/tasks.js"
     },
     {
-      "source": "/((?!api|static|assets|favicon|logo|manifest).*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
